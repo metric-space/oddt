@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
-from oddt import __version__ as VERSION
+#from oddt import __version__ as VERSION
 
 setup(name='oddt',
       version=VERSION,
@@ -16,9 +16,9 @@ setup(name='oddt',
                                                ],
                     'oddt.toolkits.extras': ['pdb_residue_templates.smi'],
                     },
-      setup_requires=['numpy', 'six'],
+      setup_requires=['numpy'],
       install_requires=open('requirements.txt', 'r').readlines(),
-      download_url='https://github.com/oddt/oddt/tarball/%s' % VERSION,
+      download_url='https://github.com/oddt/oddt/tarball/%s' % "0.7",
       keywords=['cheminformatics', 'qsar', 'virtual screening', 'docking', 'pipeline'],
       scripts=['bin/oddt_cli'],
       )
