@@ -2,6 +2,8 @@
 from setuptools import setup, find_packages
 #from oddt import __version__ as VERSION
 
+VERSION="0.7"
+
 setup(name='oddt',
       version=VERSION,
       description='Open Drug Discovery Toolkit',
@@ -18,7 +20,7 @@ setup(name='oddt',
                     },
       setup_requires=['numpy'],
       install_requires=open('requirements.txt', 'r').readlines(),
-      download_url='https://github.com/oddt/oddt/tarball/%s' % "0.7",
+      download_url='https://github.com/oddt/oddt/tarball/%s' % VERSION,
       keywords=['cheminformatics', 'qsar', 'virtual screening', 'docking', 'pipeline'],
       scripts=['bin/oddt_cli'],
       )
